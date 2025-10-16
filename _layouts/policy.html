@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="policy-page">
+  <header class="policy-header">
+    <div class="breadcrumb">
+      <a href="/">← Back to All Policies</a>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.last_updated %}
+      <p class="last-updated">Last updated: {{ page.last_updated | date: "%B %d, %Y" }}</p>
+    {% endif %}
+  </header>
+
+  <div class="policy-content">
+    {{ content }}
+  </div>
+
+  <footer class="policy-footer">
+    <div class="footer-links">
+      <a href="/">← Back to All Policies</a>
+      {% if page.extension_name %}
+        <span class="extension-info">Privacy policy for {{ page.extension_name }}</span>
+      {% endif %}
+    </div>
+  </footer>
+</article>

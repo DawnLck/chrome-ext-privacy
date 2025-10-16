@@ -1,0 +1,44 @@
+title: Chrome Extensions Privacy Policies
+description: Privacy policies for PromptMiner and WeChat Article Reading Assistant Chrome extensions
+url: https://github.com/DawnLck/chrome-ext-privacy
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Language settings
+lang: en
+
+# Collections
+collections:
+  policies:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "policies"
+    values:
+      layout: "policy"
+
+# Exclude files from processing
+exclude:
+  - WARP.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
