@@ -1,7 +1,7 @@
 title: Chrome Extensions Privacy Policies
 description: Privacy policies for PromptMiner and WeChat Article Reading Assistant Chrome extensions
-url: https://github.com/DawnLck/chrome-ext-privacy
-baseurl: ""
+url: https://dawnlck.github.io
+baseurl: "/chrome-ext-privacy"
 
 # Build settings
 markdown: kramdown

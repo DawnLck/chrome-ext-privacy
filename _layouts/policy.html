@@ -5,7 +5,7 @@ layout: default
 <article class="policy-page">
   <header class="policy-header">
     <div class="breadcrumb">
-      <a href="/">← Back to All Policies</a>
+      <a href="{{ site.baseurl }}/">← Back to All Policies</a>
     </div>
     <h1>{{ page.title }}</h1>
     {% if page.last_updated %}
@@ -19,7 +19,7 @@ layout: default
 
   <footer class="policy-footer">
     <div class="footer-links">
-      <a href="/">← Back to All Policies</a>
+      <a href="{{ site.baseurl }}/">← Back to All Policies</a>
       {% if page.extension_name %}
         <span class="extension-info">Privacy policy for {{ page.extension_name }}</span>
       {% endif %}
